@@ -1,4 +1,4 @@
-============
+=============
 logformatjson
 =============
 
@@ -7,7 +7,7 @@ logformatjson
 Install
 =======
 
-via ``pip``::
+via ``pip``:
         pip install logformatjson
 
 Exmaples

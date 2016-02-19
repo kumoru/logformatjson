@@ -20,7 +20,7 @@ from setuptools import setup
 PARAMS = {}
 
 PARAMS['name'] = 'logformatjson'
-PARAMS['version'] = '0.0.2'
+PARAMS['version'] = '0.0.3'
 PARAMS['description'] = 'Json formatter for logging'
 
 with open('README.rst', 'r', encoding = 'utf-8') as fh:
