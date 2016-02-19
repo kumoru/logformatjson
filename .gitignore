@@ -1,0 +1,14 @@
+*.egg
+*.egg-info
+*.py[co]
+
+*.egg/
+__pycache__/
+
+build/
+dist/
+.cache/
+
+.coverage
+
+docs/_build/

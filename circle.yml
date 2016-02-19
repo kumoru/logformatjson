@@ -1,0 +1,15 @@
+machine:
+  python:
+    version:
+      3.4
+dependencies:
+  pre:
+    - pip3 install -qU --compile pip
+  override:
+    - pip3 install -qU --compile pylint pytest pytest-cov pytest-mock
+  post:
+    - python setup.py install
+test:
+  override:
+    - make lint
+    - make test
