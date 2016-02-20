@@ -1,3 +1,5 @@
+general:
+  build_dir: logformatjson
 machine:
   python:
     version:
@@ -6,10 +8,10 @@ dependencies:
   pre:
     - pip3 install -qU --compile pip
   override:
-    - pip3 install -qU --compile -r requirements.txt
+    - pip3 install -qU --compile pylint pytest pytest-cov pytest-mock
   post:
     - python setup.py install
 test:
   override:
     - make lint
-    - make test
+    - make circle-test
