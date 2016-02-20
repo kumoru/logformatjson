@@ -6,6 +6,10 @@ logformatjson
 
 **warning**: This library is under active development. The log format and API are expected to change.
 
+.. image:: https://circleci.com/gh/kumoru/logformatjson.svg?style=svg
+    :target: https://circleci.com/gh/kumoru/logformatjson
+
+
 Install
 -------
 
@@ -68,45 +72,45 @@ which produces the following json (from ipython):
 
         * Override attributes copied or skipped from the LogRecord_:
         .. code-block:: python
-        
+
                 …
                 log_handler.setFormatter(JSONFormatter(kept_attrs= ['created', …]))
                 log_handler.setFormatter(JSONFormatter(skipped_attrs= ['filename', …]))
                 …
-                
+
 .. _LogRecord: https://docs.python.org/3.4/library/logging.html#logrecord-attributes
 
         * Override the provided json encoder:
-        
+
         .. code-block:: python
-        
+
                 def my_json_encoder(obj):
                   return int(obj)
-                
+
                 …
                 log_handler.setFormatter(JSONFormatter(json_encoder = my_json_encoder))
                 …
-                
-                
-      
-        
+
+
+
+
 4. Override the defaults at runtime:
 
         * Log type (intended to be mixed with extra fields):
-        
+
         .. code-block:: python
 
                 …
                 logger.debug('GET / HTTP/1.1', log_type='HTTP'}
-                …          
-        
+                …
+
 5. Extra fields:
-        
+
         .. code-block:: python
 
                 …
                 LOGGER.debug('this is my debug message', extra={'some_key': 'important_value'})
-                …       
+                …
 
 
 
