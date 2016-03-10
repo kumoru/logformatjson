@@ -57,7 +57,7 @@ which produces the following json (from ipython):
             "module": "test",
             "pathname": "test.py"
           },
-          "log_version": "0.1"
+          "log_version": "1.0"
         }
 
 2. Adding an additional metadata in **every** log entry:
@@ -70,7 +70,7 @@ which produces the following json (from ipython):
 
 3. Overriding the defaults at instantiation:
 
-        * Override attributes copied or skipped from the LogRecord_:
+    * Override attributes copied or skipped from the LogRecord_:
         .. code-block:: python
 
                 …
@@ -78,9 +78,7 @@ which produces the following json (from ipython):
                 log_handler.setFormatter(JSONFormatter(skipped_attrs= ['filename', …]))
                 …
 
-.. _LogRecord: https://docs.python.org/3.4/library/logging.html#logrecord-attributes
-
-        * Override the provided json encoder:
+    * Override the provided json encoder:
 
         .. code-block:: python
 
@@ -96,7 +94,7 @@ which produces the following json (from ipython):
 
 4. Override the defaults at runtime:
 
-        * Log type (intended to be mixed with extra fields):
+    * Log type (intended to be mixed with extra fields):
 
         .. code-block:: python
 
@@ -113,6 +111,7 @@ which produces the following json (from ipython):
                 …
 
 
+.. _LogRecord: https://docs.python.org/3.4/library/logging.html#logrecord-attributes
 
 Tests
 =====
@@ -122,7 +121,7 @@ Tests can be run via ``make``:
 .. code-block:: shell
 
         make lint
-        make unit
+        make test
 
 Authors
 =======

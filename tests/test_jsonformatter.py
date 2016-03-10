@@ -90,5 +90,5 @@ class TestJsonFormatter():
 
         assert result['timestamp'] == '2016-02-19T15:00:52.469601'
         assert result['message'] == 'a'
-        assert result['log_version'] == '0.1'
+        assert result['log_version'] == '1.0'
         assert result['levelname'] == 'Level debug'

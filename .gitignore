@@ -5,6 +5,8 @@
 *.egg/
 __pycache__/
 
+.eggs/
+
 build/
 dist/
 .cache/

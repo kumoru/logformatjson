@@ -67,7 +67,7 @@ class JSONFormatter(logging.Formatter):
 
         self.json_encoder = kwargs.get('json_encoder', self.json_encode)
         self.kept_attrs = kwargs.get('kept_attrs', KEPT_ATTRS)
-        self.log_version = kwargs.get('log_version', '0.1')
+        self.log_version = kwargs.get('log_version', '1.0')
         self.log_type = kwargs.get('log_type', 'python')
         self.permanent_metadata = kwargs.get('metadata', {})
         self.skipped_attrs = kwargs.get('skipped_attrs', SKIPPED_ATTRS)

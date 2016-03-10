@@ -20,7 +20,7 @@ from setuptools import setup
 PARAMS = {}
 
 PARAMS['name'] = 'logformatjson'
-PARAMS['version'] = '0.0.3'
+PARAMS['version'] = '0.1.0'
 PARAMS['description'] = 'Json formatter for logging'
 
 with open('README.rst', 'r', encoding = 'utf-8') as fh:
@@ -32,11 +32,8 @@ PARAMS['author_email'] = 'ryan@kumoru.io'
 PARAMS['license'] = 'Apache 2.0'
 
 PARAMS['classifiers'] = [
-    'Development Status :: 3 - Alpha',
-    # 'Development Status :: 4 - Beta',
+    'Development Status :: 4 - Beta',
     # 'Development Status :: 5 - Production/Stable',
-    # 'Development Status :: 6 - Mature',
-    # 'Development Status :: 7 - Inactive',
     'Intended Audience :: Developers',
     'License :: OSI Approved :: Apache Software License',
     'Natural Language :: English',
